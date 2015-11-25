@@ -1,6 +1,4 @@
-# Neo-Lanyon
-
-*** under construction  ;) ***
+# Neo-Lanyon just under construction 
 
 Neo-Lanyon based on Lanyon and Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
 
@@ -133,4 +131,3 @@ Lanyon has two branches, but only one is used for active development.
 
 Open sourced under the [MIT license](LICENSE.md).
 
-<3
