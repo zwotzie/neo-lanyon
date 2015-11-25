@@ -1,0 +1,43 @@
+/* Categories and Tags */
+.entry-meta {
+    color: rgba(187, 187, 187, 0.8);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+.entry-meta a {
+    color: rgba(187, 187, 187, 0.8);
+}
+
+
+.entry-meta .tag {
+    background-color: rgba(162, 162, 162, 0.8);
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    margin: 4px;
+}
+.entry-meta .tag span {
+    float: left;
+    padding: 2px 6px;
+}
+.entry-meta .tag .count {
+    background-clip: padding-box;
+    background-color: rgba(136, 136, 136, 0.8);
+    border-radius: 0 3px 3px 0;
+}
+.entry-meta .tag:hover {
+    background-color: rgba(136, 136, 136, 0.8);
+}
+.entry-meta .entry-reading-time {
+    float: right;
+}
+
+.inline-list {
+    list-style: outside none none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.inline-list li {
+    display: inline;
+    list-style-type: none;
+}

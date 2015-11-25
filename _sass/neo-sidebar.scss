@@ -1,0 +1,107 @@
+/* Neo-Sidebar CSS */
+
+/* 	hamburger  */
+#nav-toggle { 	
+	box-sizing: border-box;
+	display: block;
+	width: 70px;
+	height: 45px;
+	position: fixed;
+	top: 20px;
+	left: 10px;
+	z-index: 4; }
+
+#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #101010;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px; 
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+
+/* Hamburger animation */
+
+html.mm-opening #nav-toggle span {
+  background-color: transparent;	
+}
+html.mm-opening #nav-toggle span:before, #nav-toggle span:after {
+  top: 10px;
+}
+html.mm-opening #nav-toggle span:before {
+  transform: rotate(45deg);
+}
+html.mm-opening #nav-toggle span:after {
+  transform: rotate(-45deg);
+}
+
+.mm-panel > p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+/* really small screens */
+@media all and (max-width: 760px) {
+	#hamburgerx
+	{
+		background: #000;
+		border-bottom: 1px solid rgba( 255, 255, 255, 0.5 );
+		opacity: 0.9;
+		width: 100%;
+		top: 0;
+	}
+}
+/* 
+@media all and (min-width: 1430px) {
+#hamburger {
+    display: none;
+}
+}
+
+@media all and (max-width: 760px) {
+	#hamburger {
+	    background: #5bc5ff none repeat scroll 0 0;
+	    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	    opacity: 0.9;
+	    top: 0;
+	    width: 100%;
+	}
+} */
+
+/*
+	MENU
+*/
+#menu:not(.mm-menu)
+{
+	display: none;
+}
+#menu .fa
+{
+	width: 15px;
+	color: #ccc;
+}
+.mm-panel > p
+{
+	font-size: 14px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+/* fontsize menuentries: */
+.mm-listview > li {
+	font-size: 1.5rem;
+}

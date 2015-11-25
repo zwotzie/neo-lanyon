@@ -1,0 +1,125 @@
+.push-right
+{
+    text-align: right !important;
+    float: right;
+}
+
+.push-left
+{
+    text-align: left !important;
+    float: left;
+}
+
+
+.entry-meta{
+    margin: 50px 30px 30px;
+    text-align: center;
+}
+
+.social-share{
+	font-size: 1.2rem;
+}
+.socialcount li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.buttomline {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 1rem;
+}
+
+.post-date {
+	margin-bottom: 0;
+}
+
+
+
+/*
+	Submenu
+*/
+h1 .submenutext
+{
+	display: none;
+}
+
+.submenu
+{
+	line-height: 20px;
+	padding-top: 5px;
+}
+h1 + .submenu
+{
+	margin-top: -80px;
+	margin-bottom: 80px;
+}
+.submenu ul,
+.submenu li
+{
+	list-style: none;
+	display: block;
+	padding: 0;
+}
+.submenu ul
+{
+	border-bottom: 1px solid rgba( 255, 255, 255, 0.5 );
+	padding: 0 5px;
+	margin-left: -20px;
+	margin-right: -20px;
+}
+.submenu ul:after
+{
+	content: '';
+	display: block;
+	clear: both;
+}
+.submenu li
+{
+	margin: 0;
+	float: left;
+}
+.submenu a
+{
+	text-decoration: none;
+	display: block;
+	padding: 10px 15px;
+	position: relative;
+}
+.submenu a:hover:after
+{
+	content: '';
+	background: #fff;
+	display: block;
+	height: 1px;
+	position: absolute;
+	bottom: -1px;
+	left: 15px;
+	right: 15px;
+}
+
+.submenu.fixed
+{
+	background: #5BC5FF;
+	opacity: 0.9;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+}
+.submenu.fixed div
+{
+    width: 80%;
+	max-width: 900px;
+	margin: auto;
+}
+.fixedsubmenu .submenu
+{
+	visibility: hidden;
+}
+.fixedsubmenu .submenu.fixed
+{
+	visibility: visible;
+	display: block;
+}
