@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<div class="post">
+<article>
+  <h1 class="post-title">{{ page.title }}</h1>
+  
+	{% if page.date %}
+	<div class="buttomline">
+		<span class="post-date push-left"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></span>
+		{% if site.reading_time and page.layout == 'post' %}
+		<span class="post-date push-right">
+		<i class="fa fa-clock-o"></i>
+			{% assign readtime = content | number_of_words | divided_by:site.words_per_minute %}
+			Reading time ~{% if readtime <= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %}
+			<!-- /.entry-reading-time -->
+		</span>
+		{% endif %}      
+		<div style="clear: both;"></div>
+	</div>
+	{% endif %}
+	  
+	  {{ content }}
+	  <footer class="entry-meta">
+        <div>
+        	<span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags#{{ tag }}" title="Pages tagged {{ tag }}" class="tag"><span class="term">{{ tag }}</span></a>{% unless forloop.last %}{% endunless %}{% endfor %}</span>
+        </div>
+        </br>
+        {% if page.modified %}
+        	<span class="push-center">Updated on <span class="entry-date date updated"><time datetime="{{ page.modified }}">{{ page.modified | date: "%B %d, %Y" }}</time></span></span>
+        {% endif %}
+        <span class="author vcard"><span class="fn">{{ site.owner.name }}</span></span>
+        {% if page.share != false %}{% include social-share.html %}{% endif %}
+      </footer>
+	
+	
+	{% if page.comments != false %} do disqus here??: <section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li>
+        <h3>
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+</article>
+</div>

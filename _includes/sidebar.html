@@ -1,0 +1,40 @@
+{% capture site_cats %}{% for cat in site.categories %}{{ cat | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign cats_list = site_cats | split:',' | sort %}
+
+<!-- Toggleable sidebar -->
+<div>
+  <nav id="menu">
+    <ul>
+      <li><a href="{{site.baseurl}}/">Home</a></li>
+      
+      {% for menu in site.menu reversed %}
+        {% if ((page.url contains menu.url and menu.url != '/') or (page.url == '/index.html' and menu.url == '/')) %}
+          {% assign class = 'active' %}
+        {% endif %}
+
+        {% if menu.type == 'categories' %}
+          <li><a href="{{site.baseurl}}{{menu.url}}">{{ menu.title }}</a>
+            <ul>
+              {% for item in (0..site.categories.size) %}{% unless forloop.last %}
+                {% capture this_word %}{{ cats_list[item] | strip_newlines }}{% endcapture %}
+                  <li><a href="{{site.baseurl}}/categories/#{{this_word}}">{{this_word}} ({{ site.categories[this_word].size }})</a></li>
+              {% endunless %}{% endfor %}
+            </ul>
+          </li>
+        {% elsif menu.submenu %}
+          <li><a href="{{site.baseurl}}{{menu.url}}">{{ menu.title }}</a>
+            <ul>
+              {% for sub in menu.submenu %}
+                <li><a href="{{site.baseurl}}{{sub.url}}">{{sub.title}}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% else %}
+          <li><a href="{{site.baseurl}}{{menu.url}}">{{ menu.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+
+    </ul>
+  </nav>
+
+</div>

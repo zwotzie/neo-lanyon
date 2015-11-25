@@ -1,0 +1,55 @@
+# Setup
+title:            Neo-Lanyon
+tagline:          'A Jekyll theme'
+description:      "Think Rational, Be Concise"
+disqus_shortname: 
+reading_time:     true
+words_per_minute: 150
+url:                 'http://aktionsnetz.info'
+baseurl:             '/Pages'
+paginate:            5
+destination:      _site
+
+menu:
+  - title: 'About'
+    url: '/about'
+  - title: 'Tags'
+    url: '/tags'
+  - title: 'Categories'
+    url: '/categories'
+    type: 'categories'
+  - title: 'Favorites'
+    url: ''
+    submenu:
+      - title: 'Syntax Highlighting Post'
+        url: '/intro/code-highlighting-post/'
+      - title: 'pagex'
+        url: '/categorie/pagex'
+
+# About/contact
+author:
+  name:              Ralf Hense
+  url:               https://github.com/zwotzie
+  email:             mail@example.com
+
+gems: [jekyll-paginate]
+
+# Custom vars
+version:             0.1.0
+
+# Permalinks
+# Use of `relative_permalinks` ensures post links from the index work properly.
+#permalink:           pretty
+#relative_permalinks: true
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
+# Analytics and webmaster tools stuff goes here
+google_analytics: UA-12345
+google_verify:    
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:   
+
+sass:
+  sass_dir: _sass
+#  style: compressed
