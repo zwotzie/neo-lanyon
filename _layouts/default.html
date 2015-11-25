@@ -4,8 +4,13 @@
   {% include head.html %}
 
   <body id="default">
-
+{% if site.sidebar == 'neo' %}
   {% include sidebar.html %}
+{% else %}
+  {% include sidebar-org.html %}
+{% endif %}
+
+
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
@@ -22,7 +27,13 @@
       <div class="container content">
         {{ content }}
       </div>
-    	<a href="#menu" id="nav-toggle"><span></span></a>
+{% if site.sidebar == 'neo' %}
+  
+   	<a href="#menu" id="nav-toggle"><span></span></a>
+{% else %}
+  
+  	 <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+{% endif %}
     </div>
     
     {% include scripts.html %}

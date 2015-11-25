@@ -4,7 +4,14 @@
 <!-- Toggleable sidebar -->
 <div>
   <nav id="menu">
+  
+    <div>
+    {% if site.navidesciption %}
+    <p>{{ site.navidesciption }}</p>
+    {% endif %}
     <ul>
+    
+      
       <li><a href="{{site.baseurl}}/">Home</a></li>
       
       {% for menu in site.menu reversed %}
@@ -35,6 +42,7 @@
       {% endfor %}
 
     </ul>
+    </div>
   </nav>
 
 </div>

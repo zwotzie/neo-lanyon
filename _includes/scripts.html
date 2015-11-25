@@ -6,6 +6,8 @@
 <script>
 //	The menu
 $( document ).ready(function() {
+
+{% if site.sidebar == "neo" %}
 	$('#menu').mmenu({
 		extensions : ['theme-white', 'effect-menu-slide', 'pagedim-black'],
 		counters : true,
@@ -18,7 +20,17 @@ $( document ).ready(function() {
 			selected : "active"
 		}
 	});
+{% else %}
 
+$(".sidebar-toggle").on('click', toggleCheckbox);
+function toggleCheckbox() {
+	var checkbox = $('#sidebar-checkbox');
+	checkbox.checked = checkbox.checked ? false : true;
+};
+ 
+{% endif %}	
+	
+	
 // Magnific-Popup options
 	// Add lightbox class to all image links
 	$("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");

@@ -2,6 +2,7 @@
 title:            Neo-Lanyon
 tagline:          'A Jekyll theme'
 description:      "Think Rational, Be Concise"
+navidesciption:    "Don't teach a pig to sing ;)"
 disqus_shortname: 
 reading_time:     true
 words_per_minute: 150
@@ -9,6 +10,8 @@ url:                 'http://aktionsnetz.info'
 baseurl:             '/Pages'
 paginate:            5
 destination:      _site
+# sidebar neo/lanyon
+sidebar:             lanyon
 
 menu:
   - title: 'About'
