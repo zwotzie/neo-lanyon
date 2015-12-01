@@ -11,7 +11,7 @@ baseurl:             '/Pages'
 paginate:            5
 destination:      _site
 # sidebar neo/lanyon
-sidebar:             lanyon
+sidebar:             neo
 
 menu:
   - title: 'About'
