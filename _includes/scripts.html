@@ -8,18 +8,31 @@
 $( document ).ready(function() {
 
 {% if site.sidebar == "neo" %}
-	$('#menu').mmenu({
-		extensions : ['theme-white', 'effect-menu-slide', 'pagedim-black'],
-		counters : true,
-		dividers : {
-			fixed : true
-		},
-	}, {
-		// configuration
-		classNames : {
-			selected : "active"
+$('nav#menu').mmenu({
+	extensions : ['theme-white', 'effect-menu-slide', 'pagedim-black'],
+	searchfield : true,
+	counters : true,
+	navbar : {
+		title : '{% if site.sidebartitle %}{{site.sidebartitle}}{% else %}Menu{% endif %}'
+	},
+	navbars : [{
+			position : 'top',
+			content : ['searchfield']
+		}, {
+			position : 'top',
+			content : [
+				'prev',
+				'title',
+				'close'
+			]
+		}, {
+			position : 'bottom',
+			content : [
+				'<a href="http://github.com" >something here</a>'
+			]
 		}
-	});
+	]
+});
 {% else %}
 
 $(".sidebar-toggle").on('click', toggleCheckbox);
