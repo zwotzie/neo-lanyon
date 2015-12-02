@@ -9,6 +9,10 @@ $( document ).ready(function() {
 
 {% if site.sidebar == "neo" %}
 $('nav#menu').mmenu({
+	offCanvas: {
+        position  : "right",
+        zposition : "front"
+     },
 	extensions : ['theme-white', 'effect-menu-slide', 'pagedim-black'],
 	searchfield : true,
 	counters : true,
