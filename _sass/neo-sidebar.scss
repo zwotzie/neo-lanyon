@@ -1,13 +1,23 @@
 /* Neo-Sidebar CSS */
 
+/* .mm-menu.mm-theme-white {
+    color: rgba(255, 0, 0, 0.6);
+}*/
+
 /* 	hamburger  */
 #nav-toggle { 	
 	width: 70px;
 	height: 45px;
 	position: fixed;
 	top: 20px;
-	left: 10px;
-	z-index: 4; }
+	left: 1rem;
+	z-index: 4; 
+}
+
+.layout-reverse #nav-toggle {
+    left: auto;
+    right: 1rem;
+}
 
 #nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {

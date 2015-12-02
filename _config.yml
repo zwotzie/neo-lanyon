@@ -2,7 +2,6 @@
 title:            Neo-Lanyon
 tagline:          'A Jekyll theme'
 description:      "Think Rational, Be Concise"
-navidesciption:    "Don't teach a pig to sing ;)"
 disqus_shortname: 
 reading_time:     true
 words_per_minute: 150
@@ -12,7 +11,9 @@ paginate:            5
 destination:      _site
 # sidebar neo/lanyon
 sidebar:             neo
+# if neo:
 sidebartitle:        Menutitle
+navidesciption:    "Don't teach a pig to sing ;)"
 
 menu:
   - title: 'About'
@@ -27,24 +28,21 @@ menu:
     submenu:
       - title: 'Syntax Highlighting Post'
         url: '/intro/code-highlighting-post/'
-      - title: 'pagex'
-        url: '/categorie/pagex'
+      - title: 'something'
+        url: '/categorie/404'
 
 # About/contact
 author:
   name:              Ralf Hense
-  url:               https://github.com/zwotzie
+  url:               https://github.com/zwotzie/neo-lanyon
   email:             mail@example.com
 
 gems: [jekyll-paginate]
 
 # Custom vars
-version:             0.1.0
+version:             0.2.0
 
 # Permalinks
-# Use of `relative_permalinks` ensures post links from the index work properly.
-#permalink:           pretty
-#relative_permalinks: true
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title/
 
