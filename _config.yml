@@ -12,7 +12,7 @@ paginate:            5
 destination:      _site
 # sidebar neo/lanyon
 sidebar:             neo
-sidebartitle:        Menu
+sidebartitle:        Menutitle
 
 menu:
   - title: 'About'

@@ -2,8 +2,6 @@
 
 /* 	hamburger  */
 #nav-toggle { 	
-	box-sizing: border-box;
-	display: block;
 	width: 70px;
 	height: 45px;
 	position: fixed;
@@ -30,8 +28,12 @@
 }
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  transition: all 500ms ease-in-out;
-}
+  /*transition: all 500ms ease-in-out;*/
+  transition-delay: 0.5s;
+    transition-duration: 0.5s;
+    transition-property: transform, top, bottom, left, opacity;
+    transition-timing-function: ease;
+} 
 
 /* Hamburger animation */
 
@@ -96,12 +98,23 @@ html.mm-opening #nav-toggle span:after {
 }
 .mm-panel > p
 {
-	font-size: 14px;
-	margin-top: 20px;
-	margin-bottom: 15px;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+#nav-toggle:hover {
+        background: white;
+}
+.mm-next:hover {
+        background-color: #F5F5F5;
 }
 
 /* fontsize menuentries: */
+
 .mm-listview > li {
-	font-size: 1.5rem;
+    font-size: 1.5rem;
 }
+#nav-toggle:-moz-focus-inner {
+  border: 0;
+}
+#nav-toggle:focus {outline:none !important;} 

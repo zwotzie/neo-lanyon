@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body id="default">
-{% if site.sidebar == 'neo' %}
-  {% include sidebar.html %}
-{% else %}
-  {% include sidebar-org.html %}
-{% endif %}
+<body id="default">
 
-
-
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
+<!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+     content to avoid any CSS collisions with our real content. -->
+<div class="wrap" id="page">
+    <div class="masthead">
+       <div class="container">
           <h3 class="masthead-title">
             <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
             <small>{{ site.description }}</small>
           </h3>
         </div>
-      </div>
-
-      <div class="container content">
-        {{ content }}
-      </div>
-{% if site.sidebar == 'neo' %}
-  
-   	<a href="#menu" id="nav-toggle"><span></span></a>
-{% else %}
-  
-  	 <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-{% endif %}
     </div>
-    
-    {% include scripts.html %}
+
+    <div class="container content">
+        {{ content }}
+    </div>
+	<div> 
+		{% if site.sidebar == 'neo' %}
+	   		<a href="#menu" id="nav-toggle"><span></span></a>
+		{% else %}
+	  		<label for="sidebar-checkbox" class="sidebar-toggle"></label>
+		{% endif %}
+	</div>
+	{% if site.sidebar == 'neo' %}
+  		{% include sidebar.html %}
+	{% else %}
+  		{% include sidebar-org.html %}
+	{% endif %}
+</div>
+
+
+{% include scripts.html %}
  
-  </body>
+</body>
 </html>
