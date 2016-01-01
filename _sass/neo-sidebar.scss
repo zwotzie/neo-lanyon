@@ -1,13 +1,10 @@
 /* Neo-Sidebar CSS */
 
-/* .mm-menu.mm-theme-white {
-    color: rgba(255, 0, 0, 0.6);
-}*/
 
 /* 	hamburger  */
 #nav-toggle { 	
-	width: 70px;
-	height: 45px;
+	box-sizing: border-box;
+	display: block;
 	position: fixed;
 	top: 20px;
 	left: 1rem;
@@ -15,92 +12,47 @@
 }
 
 .layout-reverse #nav-toggle {
+/*	position: sticky; */
     left: auto;
     right: 1rem;
 }
 
 #nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
   cursor: pointer;
   border-radius: 1px;
-  height: 5px;
-  width: 35px;
+  height: 4px;
+  width: 30px;
   background: #101010;
   position: absolute;
   display: block;
   content: '';
 }
-#nav-toggle span:before {
-  top: -10px; 
-}
-#nav-toggle span:after {
-  bottom: -10px;
-}
+#nav-toggle span:before { top: -8px; }
+#nav-toggle span:after {  bottom: -8px; }
 
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  /*transition: all 500ms ease-in-out;*/
-  transition-delay: 0.5s;
-    transition-duration: 0.5s;
-    transition-property: transform, top, bottom, left, opacity;
-    transition-timing-function: ease;
-} 
 
 /* Hamburger animation */
 
-html.mm-opening #nav-toggle span {
-  background-color: transparent;	
-}
-html.mm-opening #nav-toggle span:before, #nav-toggle span:after {
-  top: 10px;
-}
-html.mm-opening #nav-toggle span:before {
-  transform: rotate(45deg);
-}
 html.mm-opening #nav-toggle span:after {
-  transform: rotate(-45deg);
+  content: 'close';
 }
 
+/* **** MENU **** */
+
+/* textpanel menu */
 .mm-panel > p {
     font-size: 1.2rem;
     margin-bottom: 15px;
     margin-top: 20px;
 }
 
-/* really small screens */
-@media all and (max-width: 760px) {
-	#hamburgerx
-	{
-		background: #000;
-		border-bottom: 1px solid rgba( 255, 255, 255, 0.5 );
-		opacity: 0.9;
-		width: 100%;
-		top: 0;
-	}
-}
-/* 
-@media all and (min-width: 1430px) {
-#hamburger {
-    display: none;
-}
-}
 
-@media all and (max-width: 760px) {
-	#hamburger {
-	    background: #5bc5ff none repeat scroll 0 0;
-	    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-	    opacity: 0.9;
-	    top: 0;
-	    width: 100%;
-	}
-} */
+#menu:not(.mm-menu) { display: none; }
 
-/*
-	MENU
-*/
-#menu:not(.mm-menu)
-{
-	display: none;
-}
 #menu .fa
 {
 	width: 15px;
@@ -112,20 +64,25 @@ html.mm-opening #nav-toggle span:after {
     margin-top: 20px;
     margin-bottom: 15px;
 }
-#nav-toggle:hover {
-        background: white;
+#nav-toggle:hover { background: white; }
+.mm-listview li > a { color: #626262; }
+
+.mm-listview li > span { color: #626262; }
+
+.mm-listview > li > a:hover {
+    background: rgba( 245, 245, 245, 0.9 );
+    color: #000;
 }
-.mm-next:hover {
-        background-color: #F5F5F5;
-}
+.mm-listview > li > a.mm-fullsubopen:hover { background: none; }
+.mm-listview > li > a.mm-fullsubopen:hover + span { background: rgba( 245, 245, 245, 0.9 ); }
 
 /* fontsize menuentries: */
 
 .mm-listview > li {
 	font-family: "PT Sans",Helvetica,Arial,sans-serif;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
 }
-#nav-toggle:-moz-focus-inner {
-  border: 0;
-}
+#nav-toggle:-moz-focus-inner { border: 0; }
 #nav-toggle:focus {outline:none !important;} 
+
+.mm-close:after { content: '\f00d'; } /*\24b3'; } */

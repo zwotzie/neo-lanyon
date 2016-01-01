@@ -3,11 +3,16 @@
 
 {% include head.html %}
 
-<body id="default">
+<body class="default layout-reverse">
 
 <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
      content to avoid any CSS collisions with our real content. -->
 <div class="wrap" id="page">
+{% if site.sidebar == 'neo' %}
+	<a href="#menu" id="nav-toggle"><span></span></a>
+{% else %}
+	<label for="sidebar-checkbox" class="sidebar-toggle"></label>
+{% endif %}
     <div class="masthead">
        <div class="container">
           <h3 class="masthead-title">
@@ -20,18 +25,11 @@
     <div class="container content">
         {{ content }}
     </div>
-	<div> 
-		{% if site.sidebar == 'neo' %}
-	   		<a href="#menu" id="nav-toggle"><span></span></a>
-		{% else %}
-	  		<label for="sidebar-checkbox" class="sidebar-toggle"></label>
-		{% endif %}
-	</div>
-	{% if site.sidebar == 'neo' %}
-  		{% include sidebar.html %}
-	{% else %}
-  		{% include sidebar-org.html %}
-	{% endif %}
+{% if site.sidebar == 'neo' %}
+	{% include sidebar.html %}
+{% else %}
+ 	{% include sidebar-org.html %}
+{% endif %}
 </div>
 
 

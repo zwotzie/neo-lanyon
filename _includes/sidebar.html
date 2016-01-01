@@ -2,7 +2,7 @@
 {% assign cats_list = site_cats | split:',' | sort %}
 
 <!-- Toggleable sidebar -->
-<div>
+<div id="sidebar">
   <nav id="menu">
   
     <div>
@@ -20,7 +20,7 @@
         {% endif %}
 
         {% if menu.type == 'categories' %}
-          <li><a href="{{site.baseurl}}{{menu.url}}">{{ menu.title }}</a>
+          <li><span>{{ menu.title }}</span>
             <ul>
               {% for item in (0..site.categories.size) %}{% unless forloop.last %}
                 {% capture this_word %}{{ cats_list[item] | strip_newlines }}{% endcapture %}
@@ -29,7 +29,7 @@
             </ul>
           </li>
         {% elsif menu.submenu %}
-          <li><a href="{{site.baseurl}}{{menu.url}}">{{ menu.title }}</a>
+          <li><span>{{ menu.title }}</span>
             <ul>
               {% for sub in menu.submenu %}
                 <li><a href="{{site.baseurl}}{{sub.url}}">{{sub.title}}</a></li>
@@ -44,5 +44,4 @@
     </ul>
     </div>
   </nav>
-
 </div>

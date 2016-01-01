@@ -5,12 +5,15 @@ description: "Just about everything you'll need to style in the theme: headings,
 modified: 2014-12-24
 tags: [sample post]
 categories: [intro]
+---
 
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
 
 # Heading 1
 
 ## Heading 2
+
+<!--more-->
 
 ### Heading 3
 
@@ -82,7 +85,7 @@ Non Pygments code example
         <p>This is great isn't it?</p>
     </div>
 
-## Buttons
+## Buttons (bootstrap needed...)
 
 Make any link standout more when applying the `.btn` class.
 

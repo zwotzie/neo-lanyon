@@ -4,22 +4,26 @@ layout: default
 
 <div class="post">
 <article>
-  <h1 class="post-title">{{ page.title }}</h1>
+   <header>
+      <h1 class="post-title">{{ page.title }}
+      <a class="push-right permalink" href="{{ site.url }}{{ page.url }}" rel="bookmark" title="Permalink"><i class="fa fa-link"></i></a>
+      </h1>
+   </header>
   
-	{% if page.date %}
+{% if page.date %}
 	<div class="buttomline">
 		<span class="post-date push-left"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></span>
-		{% if site.reading_time and page.layout == 'post' %}
+	{% if site.reading_time and page.layout == 'post' %}
 		<span class="post-date push-right">
 		<i class="fa fa-clock-o"></i>
 			{% assign readtime = content | number_of_words | divided_by:site.words_per_minute %}
 			Reading time ~{% if readtime <= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %}
 			<!-- /.entry-reading-time -->
 		</span>
-		{% endif %}      
+	{% endif %}
 		<div style="clear: both;"></div>
 	</div>
-	{% endif %}
+{% endif %}
 	  
 	  {{ content }}
 	  <footer class="entry-meta">
@@ -35,7 +39,11 @@ layout: default
       </footer>
 	
 	
-	{% if page.comments != false %} do disqus here??: <section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
+	{% if page.comments != false %}
+	<!-- /#disqus_thread -->
+		<section id="disqus_thread"></section>
+	<!-- /#disqus_thread -->
+	{% endif %}
 
 <div class="related">
   <h2>Related Posts</h2>

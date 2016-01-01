@@ -5,7 +5,7 @@ description:      "Think Rational, Be Concise"
 disqus_shortname: 
 reading_time:     true
 words_per_minute: 150
-url:                 'http://aktionsnetz.info'
+url:                 'http://s521193931.online.de/Pages'
 baseurl:             '/Pages'
 paginate:            5
 destination:      _site
@@ -14,6 +14,10 @@ sidebar:             neo
 # if neo:
 sidebartitle:        Menutitle
 navidesciption:    "Don't teach a pig to sing ;)"
+excerpt_separator: '<!--more-->'
+
+github:
+  repo: https://github.com/zwotzie/neo-lanyon
 
 menu:
   - title: 'About'

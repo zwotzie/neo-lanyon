@@ -6,15 +6,37 @@ title: Home
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}/{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+   <header>
+      <h1 class="post-title">{{ post.title }}
+      <a class="push-right permalink" href="{{ site.url }}{{ post.url }}" rel="bookmark" title="Permalink"><i class="fa fa-link"></i></a>
+      </h1>
+   </header>
+  
+{% if post.date %}
+	<div class="buttomline">
+		<span class="post-date push-left"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+		<span class="post-date push-right">
+		<i class="fa fa-clock-o"></i>
+			{% assign readtime = post.content | number_of_words | divided_by:site.words_per_minute %}
+			Reading time ~{% if readtime <= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %}
+			<!-- /.entry-reading-time -->
+		</span>
 
-    {{ post.content }}
+		<div style="clear: both;"></div>
+	</div>
+{% endif %}
+
+    <p class="post-content">{{ post.content | strip_html | truncatewords: 32 }}</p>
+    
+
+    <p>
+    	<a class="btn btn-sm btn-primary push-right" href="{{ site.baseurl }}{{ post.url }}" role="button">
+    		Read more... <i class="fa fa-arrow-circle-right"></i>
+    	</a>
+    </p>
+
+    
   </div>
   {% endfor %}
 </div>

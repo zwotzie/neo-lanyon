@@ -52,35 +52,32 @@ function toggleCheckbox() {
 	
 	
 // Magnific-Popup options
-	// Add lightbox class to all image links
-	$("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");
+// Add lightbox class to all image links
+$("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");
 
-	// Magnific-Popup options
-
-	$('.image-popup').magnificPopup({
-	  type: 'image',
-	  tLoading: 'Loading image #%curr%...',
-	  gallery: {
-	    enabled: true,
-	    navigateByImgClick: true,
-	    preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-	  },
-	  image: {
-	    tError: '<a href="%url%">Image #%curr%</a> could not be loaded.',
-	  },
-	  removalDelay: 300, // Delay in milliseconds before popup is removed
-	  // Class that is added to body when popup is open. 
-	  // make it unique to apply your CSS animations just to this exact popup
-	  mainClass: 'mfp-fade'
-	});
-
-
+// Magnific-Popup options
+	
+$('.image-popup').magnificPopup({
+	type: 'image',
+	tLoading: 'Loading image #%curr%...',
+	gallery: {
+	  enabled: true,
+	  navigateByImgClick: true,
+	  preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+	},
+	image: {
+	  tError: '<a href="%url%">Image #%curr%</a> could not be loaded.',
+	},
+	removalDelay: 300, // Delay in milliseconds before popup is removed
+	// Class that is added to body when popup is open. 
+	// make it unique to apply your CSS animations just to this exact popup
+	mainClass: 'mfp-fade'
 });
-</script>
+});
+
 
 {% if site.google_analytics %}
 <!-- Asynchronous Google Analytics snippet -->
-<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -89,5 +86,9 @@ function toggleCheckbox() {
   ga('create', '{{ site.google_analytics }}', 'auto');
   ga('require', 'linkid', 'linkid.js');
   ga('send', 'pageview');
-</script>
+
 {% endif %}
+</script>
+
+{% if page.comments != false %}{% include disqus_comments.html %}{% endif %}
+
