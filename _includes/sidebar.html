@@ -32,12 +32,12 @@
           <li><span>{{ menu.title }}</span>
             <ul>
               {% for sub in menu.submenu %}
-                <li><a href="{{site.baseurl}}{{sub.url}}">{{sub.title}}</a></li>
+                <li><a href="{% if sub.url | slice: 0,4 == "http" %}{{sub.url}}{% else %}{{site.baseurl}}{{sub.url}}{% endif %}">{{sub.title}}</a></li>
               {% endfor %}
             </ul>
           </li>
         {% else %}
-          <li><a href="{{site.baseurl}}{{menu.url}}">{{ menu.title }}</a></li>
+          <li><a href="{% if menu.url | slice: 0,4 == "http" %}{{menu.url}}{% else %}{{site.baseurl}}{{menu.url}}{% endif %}">{{ menu.title }}</a></li>
         {% endif %}
       {% endfor %}
 
@@ -45,3 +45,4 @@
     </div>
   </nav>
 </div>
+blub
