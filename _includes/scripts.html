@@ -92,3 +92,12 @@ $('.image-popup').magnificPopup({
 
 {% if page.comments != false %}{% include disqus_comments.html %}{% endif %}
 
+{% if site.floating_share %}
+//sharing
+$(document).ready(function(){
+  $("body").floatingSocialShare({
+    buttons: ["facebook","twitter","google-plus", "linkedin", "pinterest"],
+    text: "Share with "
+  });
+});
+{% endif %}
