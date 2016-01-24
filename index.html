@@ -15,13 +15,15 @@ title: Home
 {% if post.date %}
 	<div class="buttomline">
 		<span class="post-date push-left"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>
-
+		
+	{% if site.reading_time %}
 		<span class="post-date push-right">
 		<i class="fa fa-clock-o"></i>
 			{% assign readtime = post.content | number_of_words | divided_by:site.words_per_minute %}
 			Reading time ~{% if readtime <= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %}
 			<!-- /.entry-reading-time -->
 		</span>
+	{% endif %}		
 
 		<div style="clear: both;"></div>
 	</div>

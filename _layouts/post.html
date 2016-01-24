@@ -13,7 +13,7 @@ layout: default
 {% if page.date %}
 	<div class="buttomline">
 		<span class="post-date push-left"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></span>
-	{% if site.reading_time and page.layout == 'post' %}
+	{% if site.reading_time %}
 		<span class="post-date push-right">
 		<i class="fa fa-clock-o"></i>
 			{% assign readtime = content | number_of_words | divided_by:site.words_per_minute %}
