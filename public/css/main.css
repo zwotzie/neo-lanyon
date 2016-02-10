@@ -124,7 +124,7 @@ h1 + .submenu {
 #nav-toggle span:before,
 #nav-toggle span:after {
   cursor: pointer;
-  border-radius: 1px;
+  /* border-radius: 1px; */
   height: 4px;
   width: 30px;
   background: #101010;

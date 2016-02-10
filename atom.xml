@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Neo-Lanyon</title>
- <link href="http://s521193931.online.de/Pages/neo-lanyon/atom.xml" rel="self"/>
- <link href="http://s521193931.online.de/Pages/neo-lanyon/"/>
- <updated>2016-01-25T17:25:22+01:00</updated>
- <id>http://s521193931.online.de/Pages</id>
+ <link href="http://zwotzie.github.io/neo-lanyon/neo-lanyon/atom.xml" rel="self"/>
+ <link href="http://zwotzie.github.io/neo-lanyon/neo-lanyon/"/>
+ <updated>2016-02-04T22:26:06+01:00</updated>
+ <id>http://zwotzie.github.io/neo-lanyon</id>
  <author>
    <name>Ralf Hense</name>
    <email>mail@example.com</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Introducing Lanyon</title>
-   <link href="http://s521193931.online.de/Pages/introducing-lanyon/"/>
+   <link href="http://zwotzie.github.io/neo-lanyon/introducing-lanyon/"/>
    <updated>2014-01-02T00:00:00+01:00</updated>
-   <id>http://s521193931.online.de/Pages/neo-lanyon/introducing-lanyon</id>
+   <id>http://zwotzie.github.io/neo-lanyon/neo-lanyon/introducing-lanyon</id>
    <content type="html">&lt;p&gt;Lanyon is an unassuming &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme that places content first by tucking away navigation in a hidden drawer. It’s based on &lt;a href=&quot;http://getpoole.com&quot;&gt;Poole&lt;/a&gt;, the Jekyll butler.&lt;/p&gt;
 
 &lt;h3 id=&quot;built-on-poole&quot;&gt;Built on Poole&lt;/h3&gt;
@@ -59,9 +59,9 @@
  
  <entry>
    <title>Example content</title>
-   <link href="http://s521193931.online.de/Pages/example-content/"/>
+   <link href="http://zwotzie.github.io/neo-lanyon/example-content/"/>
    <updated>2014-01-01T00:00:00+01:00</updated>
-   <id>http://s521193931.online.de/Pages/neo-lanyon/example-content</id>
+   <id>http://zwotzie.github.io/neo-lanyon/neo-lanyon/example-content</id>
    <content type="html">&lt;div class=&quot;message&quot;&gt;
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 &lt;/div&gt;
@@ -192,9 +192,9 @@
  
  <entry>
    <title>What's Jekyll?</title>
-   <link href="http://s521193931.online.de/Pages/whats-jekyll/"/>
+   <link href="http://zwotzie.github.io/neo-lanyon/whats-jekyll/"/>
    <updated>2013-12-31T00:00:00+01:00</updated>
-   <id>http://s521193931.online.de/Pages/neo-lanyon/whats-jekyll</id>
+   <id>http://zwotzie.github.io/neo-lanyon/neo-lanyon/whats-jekyll</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/mojombo/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -209,9 +209,9 @@
  
  <entry>
    <title>Post with a Background Image</title>
-   <link href="http://s521193931.online.de/Pages/image/background-image/"/>
+   <link href="http://zwotzie.github.io/neo-lanyon/image/background-image/"/>
    <updated>2013-10-26T00:00:00+02:00</updated>
-   <id>http://s521193931.online.de/Pages/neo-lanyon/image/background-image</id>
+   <id>http://zwotzie.github.io/neo-lanyon/neo-lanyon/image/background-image</id>
    <content type="html">&lt;p&gt;Here be a sample post with a custom background image. To utilize this “feature” just add the following YAML to a post’s front matter.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
@@ -227,9 +227,9 @@
  
  <entry>
    <title>Syntax Highlighting Post</title>
-   <link href="http://s521193931.online.de/Pages/intro/code-highlighting-post/"/>
+   <link href="http://zwotzie.github.io/neo-lanyon/intro/code-highlighting-post/"/>
    <updated>2013-08-16T00:00:00+02:00</updated>
-   <id>http://s521193931.online.de/Pages/neo-lanyon/intro/code-highlighting-post</id>
+   <id>http://zwotzie.github.io/neo-lanyon/neo-lanyon/intro/code-highlighting-post</id>
    <content type="html">&lt;p&gt;Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;pygments-code-blocks&quot;&gt;Pygments Code Blocks&lt;/h3&gt;
@@ -344,18 +344,18 @@
  
  <entry>
    <title>Sample Link Post</title>
-   <link href="http://s521193931.online.de/Pages/intro/sample-link-post/"/>
+   <link href="http://zwotzie.github.io/neo-lanyon/intro/sample-link-post/"/>
    <updated>2013-08-12T00:00:00+02:00</updated>
-   <id>http://s521193931.online.de/Pages/neo-lanyon/intro/sample-link-post</id>
+   <id>http://zwotzie.github.io/neo-lanyon/neo-lanyon/intro/sample-link-post</id>
    <content type="html">&lt;p&gt;This theme supports &lt;strong&gt;link posts&lt;/strong&gt;, made famous by John Gruber. To use, just add &lt;code class=&quot;highlighter-rouge&quot;&gt;link: http://url-you-want-linked&lt;/code&gt; to the post’s YAML front matter and you’re done.&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
    <title>A Post with a Video</title>
-   <link href="http://s521193931.online.de/Pages/intro/video-post/"/>
+   <link href="http://zwotzie.github.io/neo-lanyon/intro/video-post/"/>
    <updated>2013-06-25T00:00:00+02:00</updated>
-   <id>http://s521193931.online.de/Pages/neo-lanyon/intro/video-post</id>
+   <id>http://zwotzie.github.io/neo-lanyon/neo-lanyon/intro/video-post</id>
    <content type="html">&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/SU3kYxJmWuQ&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
 
 &lt;p&gt;Video embeds are responsive and scale with the width of the main content block with the help of &lt;a href=&quot;http://fitvidsjs.com/&quot;&gt;FitVids&lt;/a&gt;.&lt;/p&gt;
@@ -369,9 +369,9 @@
  
  <entry>
    <title>Post with Large Feature Image and Text</title>
-   <link href="http://s521193931.online.de/Pages/intro/readability-feature-post/"/>
+   <link href="http://zwotzie.github.io/neo-lanyon/intro/readability-feature-post/"/>
    <updated>2013-05-23T00:00:00+02:00</updated>
-   <id>http://s521193931.online.de/Pages/neo-lanyon/intro/readability-feature-post</id>
+   <id>http://zwotzie.github.io/neo-lanyon/neo-lanyon/intro/readability-feature-post</id>
    <content type="html">&lt;p&gt;This is a sample post with a large feature image up top and tons of text. Odio ad blue bottle vinyl, 90’s narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney’s. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.&lt;/p&gt;
 
 &lt;p&gt;Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.&lt;/p&gt;
@@ -419,9 +419,9 @@
  
  <entry>
    <title>A Post with Images</title>
-   <link href="http://s521193931.online.de/Pages/sample/intro/sample-post-images/"/>
+   <link href="http://zwotzie.github.io/neo-lanyon/sample/intro/sample-post-images/"/>
    <updated>2013-05-22T00:00:00+02:00</updated>
-   <id>http://s521193931.online.de/Pages/neo-lanyon/sample/intro/sample-post-images</id>
+   <id>http://zwotzie.github.io/neo-lanyon/neo-lanyon/sample/intro/sample-post-images</id>
    <content type="html">&lt;p&gt;Here are some examples of what a post with images might look like. If you want to display two or three images next to each other responsively use &lt;code class=&quot;highlighter-rouge&quot;&gt;figure&lt;/code&gt; with the appropriate &lt;code class=&quot;highlighter-rouge&quot;&gt;class&lt;/code&gt;. Each instance of &lt;code class=&quot;highlighter-rouge&quot;&gt;figure&lt;/code&gt; is auto-numbered and displayed in the caption.&lt;/p&gt;
 
 &lt;h2 id=&quot;figures-for-images-or-video&quot;&gt;Figures (for images or video)&lt;/h2&gt;
@@ -517,9 +517,9 @@ Available values: [1..3].&lt;/li&gt;
  
  <entry>
    <title>Testing Readability with a Bunch of Text</title>
-   <link href="http://s521193931.online.de/Pages/intro/readability-post/"/>
+   <link href="http://zwotzie.github.io/neo-lanyon/intro/readability-post/"/>
    <updated>2012-05-22T00:00:00+02:00</updated>
-   <id>http://s521193931.online.de/Pages/neo-lanyon/intro/readability-post</id>
+   <id>http://zwotzie.github.io/neo-lanyon/neo-lanyon/intro/readability-post</id>
    <content type="html">&lt;p&gt;Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin. Pinterest literally occupy Schlitz forage. Odio ad blue bottle vinyl, 90’s narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney’s. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.&lt;/p&gt;
 
 &lt;p&gt;Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.&lt;/p&gt;
@@ -565,9 +565,9 @@ Available values: [1..3].&lt;/li&gt;
  
  <entry>
    <title>Sample Post</title>
-   <link href="http://s521193931.online.de/Pages/intro/sample-post/"/>
+   <link href="http://zwotzie.github.io/neo-lanyon/intro/sample-post/"/>
    <updated>2011-03-10T00:00:00+01:00</updated>
-   <id>http://s521193931.online.de/Pages/neo-lanyon/intro/sample-post</id>
+   <id>http://zwotzie.github.io/neo-lanyon/neo-lanyon/intro/sample-post</id>
    <content type="html">&lt;p&gt;Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.&lt;/p&gt;
 
 &lt;h1 id=&quot;heading-1&quot;&gt;Heading 1&lt;/h1&gt;
@@ -588,7 +588,7 @@ Available values: [1..3].&lt;/li&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, test link adipiscing elit. &lt;strong&gt;This is strong&lt;/strong&gt;. Nullam dignissim convallis est. Quisque aliquam.&lt;/p&gt;
 
-&lt;p class=&quot;image-right&quot;&gt;&lt;img src=&quot;http://s521193931.online.de/Pages/images/3953273590_704e3899d5_m.jpg&quot; alt=&quot;Smithsonian Image&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;image-right&quot;&gt;&lt;img src=&quot;http://zwotzie.github.io/neo-lanyon/images/3953273590_704e3899d5_m.jpg&quot; alt=&quot;Smithsonian Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;This is emphasized&lt;/em&gt;. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H&lt;sub&gt;2&lt;/sub&gt;O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times &lt;cite&gt;(That’s a citation)&lt;/cite&gt;. &lt;u&gt;Underline&lt;/u&gt;. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.&lt;/p&gt;
 
